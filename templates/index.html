@@ -13,12 +13,12 @@
 
   <body>
     <!--bootstrap style the background-->
-    <div class="container">
+    <div style="background:rgba(75, 27, 4, 0.514)"  class="container">
 
       <!-- Add Jumbotron to Header -->
       <!--bootstrap colorize the jumbotron-->
-      <div class="jumbotron text-center">
-        <h1>Mission to Mars</h1>
+      <div style="background:rgba(153, 51, 4, 0.671)" class="jumbotron text-center">
+        <h1 style="color:white;">Mission to Mars</h1>
 
         <!-- Add a button to activate scraping script -->
         <!--bootsraping button style-->
@@ -31,7 +31,7 @@
           <div class="media">
             <div class="media-body">
               <!--bootstrap strong text-->
-              <h2><strong>Latest Mars News</strong></h2>
+              <h2 style="color:white;"><strong>Latest Mars News</strong></h2>
               <h4 class="media-heading">{{ mars.news_title }}</h4>
               <p>{{ mars.news_paragraph }}</p>
             </div>
@@ -43,7 +43,7 @@
       <div class="row" id="mars-featured-image">
         <div class="col-md-8">
           <!--bootstrap strong text-->
-          <h2><strong>Featured Mars Image</strong></h2>
+          <h2 style="color:white;"><strong>Featured Mars Image</strong></h2>
           <img
             src={{mars.featured_image}}
             class="img-responsive"
@@ -56,7 +56,7 @@
           <!-- Mars Facts -->
           <div class="row" id="mars-facts">
             <!--bootstrap strong text, text alignment, h4 to h3-->
-            <h3 class="text-center"><strong>Mars Facts</strong></h3>
+            <h3 style="color:white;" class="text-center"><strong>Mars Facts</strong></h3>
             {{ mars.facts | safe }}
           </div>
         </div>
@@ -67,7 +67,7 @@
       <div class="row" id="mars-hemispheres">
         <div class="page-header">
           <!--bootstrap strong text-->
-          <h2 class="text-center"><strong>Mars Hemispheres</strong></h2>
+          <h2 style="color:white;" class="text-center"><strong>Mars Hemispheres</strong></h2>
         </div>
         {% for hemisphere in mars.hemispheres %}
         <!--bootstrap image as thumbnail to rounded and centered-->
